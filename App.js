@@ -6,15 +6,20 @@ import {
   ScrollView,
   View,
   Text,
+  Button,
 } from 'react-native';
 
 
 const App = () => {
-  const [] = useState ("");
+  const [outputText, setoutputText] = useState ("open up App.js");
+
   return (
     <>
       <SafeAreaView>
-        
+        <Text>{outputText}</Text> 
+        <Button 
+          title="change Text"
+          onPress = {() => setoutputText('The text changed')} />      
       </SafeAreaView>
     </>
   );
