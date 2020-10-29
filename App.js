@@ -1,13 +1,6 @@
 
 import React, {useState} from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  Button,
-} from 'react-native';
+import {SafeAreaView, StyleSheet, ScrollView, View, Text, Button,} from 'react-native';
 
 
 const App = () => {
@@ -19,7 +12,8 @@ const App = () => {
         <Text>{outputText}</Text> 
         <Button 
           title="change Text"
-          onPress = {() => setoutputText('The text changed')} />      
+          onPress = {() => setoutputText('The text changed')}
+        />      
       </SafeAreaView>
     </>
   );
